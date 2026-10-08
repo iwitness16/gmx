@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import L from "leaflet"
 import "leaflet/dist/leaflet.css"
 
@@ -124,8 +124,15 @@ function currentLocationIcon() {
 
 export default function TrackingMap({ origin, destination, current }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isClient) return
+    
     const el = containerRef.current
     if (!el) return
 
@@ -135,8 +142,14 @@ export default function TrackingMap({ origin, destination, current }: Props) {
       destination.lat === 0 && destination.lng === 0
     ) return
 
+    // Clear any existing map instance
+    el.innerHTML = ''
+
     // ── Create fresh map every time coords change ────────────────────────
-    const map = L.map(el, { zoomControl: true })
+    const map = L.map(el, { 
+      zoomControl: true,
+      preferCanvas: true,
+    })
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
@@ -193,13 +206,24 @@ export default function TrackingMap({ origin, destination, current }: Props) {
     map.fitBounds(bounds, { padding: [50, 50] })
 
     // Cleanup — destroy map when effect re-runs or component unmounts
-    return () => { map.remove() }
+    return () => { 
+      map.remove() 
+    }
 
   }, [
+    isClient,
     origin.lat, origin.lng, origin.label,
     destination.lat, destination.lng, destination.label,
     current.lat, current.lng, current.label,
   ])
+
+  if (!isClient) {
+    return (
+      <div style={{ height: "420px", width: "100%" }} className="flex items-center justify-center bg-gray-100">
+        <p className="text-sm text-gray-400">Loading map...</p>
+      </div>
+    )
+  }
 
   return (
     <>
