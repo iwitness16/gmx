@@ -41,12 +41,12 @@ export function SiteFooter() {
               <div className="relative size-10 shrink-0 overflow-hidden rounded-full ring-2 ring-rose-500 ring-offset-2 ring-offset-[#12203f]">
                 <Image
                   src="/images/logo.png"
-                  alt="Global Mail Express"
+                  alt="Global Mails Express"
                   fill
                   className="object-cover"
                 />
               </div>
-              <span className="text-lg font-bold tracking-tight">Global Mail Express</span>
+              <span className="text-lg font-bold tracking-tight">Global Mails Express</span>
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-primary-foreground/70">
               Reliable air, ocean, road and rail freight forwarding with real-time shipment
@@ -93,7 +93,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 text-xs text-primary-foreground/50 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Global Mail Express. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Global Mails Express. All rights reserved.</p>
           <p>globalmailsexpress.com</p>
         </div>
       </div>

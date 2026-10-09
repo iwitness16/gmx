@@ -381,7 +381,7 @@ export default function AdminDashboard() {
       <aside className="hidden w-56 shrink-0 flex-col border-r border-gray-200 bg-white lg:flex">
         <div className="flex items-center gap-2.5 border-b border-gray-100 px-5 py-4">
           <div className="relative size-8 shrink-0 overflow-hidden rounded-full ring-2 ring-rose-500 ring-offset-1 ring-offset-white">
-            <Image src="/images/logo.png" alt="Global Mail Express" fill className="object-cover" />
+            <Image src="/images/logo.png" alt="Global Mails Express" fill className="object-cover" />
           </div>
           <span className="text-sm font-bold leading-tight text-gray-900">GME Admin</span>
         </div>
@@ -405,7 +405,7 @@ export default function AdminDashboard() {
             <div className="flex items-center justify-between border-b border-gray-100 px-5 py-4">
               <div className="flex items-center gap-2.5">
                 <div className="relative size-9 shrink-0 overflow-hidden rounded-full ring-2 ring-rose-500 ring-offset-1 ring-offset-white">
-                  <Image src="/images/logo.png" alt="Global Mail Express" fill className="object-cover" />
+                  <Image src="/images/logo.png" alt="Global Mails Express" fill className="object-cover" />
                 </div>
                 <span className="text-sm font-bold text-gray-900">GME Admin</span>
               </div>

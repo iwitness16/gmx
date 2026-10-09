@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Global Mail Express | Worldwide Freight & Package Tracking',
+  title: 'Global Mails Express | Worldwide Freight & Package Tracking',
   description:
-    'Global Mail Express delivers fast, secure air, sea, road and rail freight forwarding with real-time package tracking across the world.',
+    'Global Mails Express delivers fast, secure air, sea, road and rail freight forwarding with real-time package tracking across the world.',
   generator: 'v0.app',
   icons: {
     icon: [

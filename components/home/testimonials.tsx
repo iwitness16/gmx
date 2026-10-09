@@ -7,21 +7,21 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const TESTIMONIALS = [
   {
     quote:
-      "I had a great experience with Global Mail Express. Their team was very professional and responsive from the beginning until the final delivery. They kept me updated throughout the process and ensured everything arrived safely and on time. It's rare to find a logistics company that combines efficiency with excellent customer service. I highly recommend them to anyone looking for reliable shipping solutions.",
+      "I had a great experience with Global Mails Express. Their team was very professional and responsive from the beginning until the final delivery. They kept me updated throughout the process and ensured everything arrived safely and on time. It's rare to find a logistics company that combines efficiency with excellent customer service. I highly recommend them to anyone looking for reliable shipping solutions.",
     name: "Helena Brandt",
     role: "Supply Chain Manager, Nordholt Retail",
     avatar: "/images/rev1.jpg",
   },
   {
     quote:
-      "We moved our entire ocean freight program to Global Mail Express. Visibility from booking to delivery is the best we've had in over a decade. The live tracking dashboard means our warehouse team is never caught off guard, and our customs delays have been cut in half. Outstanding service all round.",
+      "We moved our entire ocean freight program to Global Mails Express. Visibility from booking to delivery is the best we've had in over a decade. The live tracking dashboard means our warehouse team is never caught off guard, and our customs delays have been cut in half. Outstanding service all round.",
     name: "Rafael Duarte",
     role: "Operations Director, Duarte Import Co.",
     avatar: "/images/rev2.jpg",
   },
   {
     quote:
-      "Our customers get real tracking updates instead of guesswork. The support response time is excellent and the team genuinely cares about every shipment. Global Mail Express has transformed how we handle international logistics — we wouldn't go back.",
+      "Our customers get real tracking updates instead of guesswork. The support response time is excellent and the team genuinely cares about every shipment. Global Mails Express has transformed how we handle international logistics — we wouldn't go back.",
     name: "Wei Lin",
     role: "Founder, Lin & Co. Trading",
     avatar: "/images/rev3.jpg",

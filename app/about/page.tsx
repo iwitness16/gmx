@@ -56,7 +56,7 @@ const VALUES = [
 ]
 
 const TIMELINE = [
-  { year: "2008", title: "Founded", detail: "Global Mail Express was established with a focus on express mail and road freight, serving customers across multiple regions." },
+  { year: "2008", title: "Founded", detail: "Global Mails Express was established with a focus on express mail and road freight, serving customers across multiple regions." },
   { year: "2011", title: "Air & Ocean added", detail: "Launched air freight and FCL ocean services through key carrier partnerships, expanding global reach." },
   { year: "2015", title: "Global expansion", detail: "Extended operations to serve Asia-Pacific, Middle East, and Africa corridors through strategic partnerships." },
   { year: "2018", title: "Live tracking platform", detail: "Launched our proprietary tracking platform giving customers real-time shipment visibility from pickup to delivery." },
@@ -91,7 +91,7 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-gray-300">
-              Global Mail Express is a multi-modal freight forwarder operating across air, ocean,
+              Global Mails Express is a multi-modal freight forwarder operating across air, ocean,
               road and rail — connecting businesses and individuals to every corner of the world
               with precision, transparency, and care.
             </p>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 </h2>
                 <div className="mt-5 space-y-4 text-base leading-relaxed text-gray-500">
                   <p>
-                    Global Mail Express was founded with a simple belief: that shippers
+                    Global Mails Express was founded with a simple belief: that shippers
                     deserve a freight partner that communicates clearly, moves cargo reliably,
                     and takes ownership when things go wrong.
                   </p>
@@ -141,7 +141,7 @@ export default function AboutPage() {
                 </Link>
               </div>
               <div className="overflow-hidden rounded-2xl shadow-xl shadow-gray-200">
-                <Image src="/images/about-hub.png" alt="Global Mail Express operations hub"
+                <Image src="/images/about-hub.png" alt="Global Mails Express operations hub"
                   width={640} height={480} className="h-[400px] w-full object-cover" />
               </div>
             </div>

@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
 
     const transporter = createTransporter()
 
-    const from    = process.env.MAIL_FROM    || `Global Mail Express <${process.env.MAIL_USER}>`
+    const from    = process.env.MAIL_FROM    || `Global Mails Express <${process.env.MAIL_USER}>`
     const adminTo = process.env.ADMIN_EMAIL  || process.env.MAIL_USER!
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://globalmailsexpress.com"
 

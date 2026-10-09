@@ -1,5 +1,5 @@
 /**
- * Email Templates — Global Mail Express
+ * Email Templates — Global Mails Express
  * Professional HTML emails for shipment notifications.
  */
 
@@ -38,7 +38,7 @@ function baseLayout(content: string, previewText: string): string {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="x-apple-disable-message-reformatting" />
-  <title>Global Mail Express</title>
+  <title>Global Mails Express</title>
   <!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><![endif]-->
 </head>
 <body style="margin:0;padding:0;background-color:${GREY_BG};font-family:'Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased;">
@@ -57,7 +57,7 @@ function baseLayout(content: string, previewText: string): string {
               <tr>
                 <td>
                   <span style="color:#ffffff;font-size:20px;font-weight:800;letter-spacing:-0.5px;">
-                    Global Mail Express
+                    Global Mails Express
                   </span>
                   <br/>
                   <span style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">
@@ -79,7 +79,7 @@ function baseLayout(content: string, previewText: string): string {
         <tr>
           <td style="background-color:${GREY_BG};padding:24px 32px;border-top:1px solid ${GREY_BORDER};">
             <p style="margin:0 0 6px;font-size:12px;color:${GREY_TEXT};text-align:center;">
-              Global Mail Express &mdash; Worldwide Freight &amp; Logistics
+              Global Mails Express &mdash; Worldwide Freight &amp; Logistics
             </p>
             <p style="margin:0;font-size:12px;color:${GREY_TEXT};text-align:center;">
               <a href="mailto:info@globalmailsexpress.com" style="color:${BRAND_RED};text-decoration:none;">info@globalmailsexpress.com</a>
@@ -148,8 +148,8 @@ export function buildShipmentEmail(data: ShipmentEmailData): { subject: string; 
   const isNew = data.event === "created"
 
   const subject = isNew
-    ? `Shipment Confirmed: ${data.trackingNumber} - Global Mail Express`
-    : `Shipment Update: ${data.trackingNumber} - Global Mail Express`
+    ? `Shipment Confirmed: ${data.trackingNumber} - Global Mails Express`
+    : `Shipment Update: ${data.trackingNumber} - Global Mails Express`
 
   const previewText = isNew
     ? `Your shipment ${data.trackingNumber} has been registered and is on its way.`
@@ -293,7 +293,7 @@ export function buildShipmentEmail(data: ShipmentEmailData): { subject: string; 
     ``,
     `Track your shipment: ${data.siteUrl}/track?q=${encodeURIComponent(data.trackingNumber)}`,
     ``,
-    `Global Mail Express`,
+    `Global Mails Express`,
     `info@globalmailsexpress.com | +1 (315) 454-1395`,
   ].filter(l => l !== undefined).join("\n")
 

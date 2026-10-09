@@ -37,10 +37,10 @@ export default function AdminLoginPage() {
         {/* Logo */}
         <div className="mb-8 flex flex-col items-center gap-3">
           <div className="relative size-14 overflow-hidden rounded-full ring-2 ring-rose-500 ring-offset-2 ring-offset-gray-900">
-            <Image src="/images/logo.png" alt="Global Mail Express" fill className="object-cover" />
+            <Image src="/images/logo.png" alt="Global Mails Express" fill className="object-cover" />
           </div>
           <div className="text-center">
-            <h1 className="text-lg font-bold text-white">Global Mail Express</h1>
+            <h1 className="text-lg font-bold text-white">Global Mails Express</h1>
             <p className="text-sm text-gray-400">Admin Portal</p>
           </div>
         </div>
